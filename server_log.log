@@ -1,0 +1,60 @@
+ > Content-Length: 58
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Initialize","jsonrpc":"2.0","id":1,"params":{}}
+S> Content-Length: 123
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Initialize","jsonrpc":"2.0","id":1,"result":{"capabilities":{"textDocumentSync":{"openClose":true,"change":1}}}}
+ > Content-Length: 61
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Initialized","jsonrpc":"2.0","id":200,"params":{}}
+ > Content-Length: 173
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/didOpen","jsonrpc":"2.0","id":200,"params":{"textDocument":{"uri":"helloworld.txt","version":1,"languageID":"helloworld","text":"print HelloWorld"}}}
+ > Content-Length: 166
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/didChange","jsonrpc":"2.0","id":2,"params":{"contentChanges":{"text":" print Helloorld"},"textDocument":{"uri":"helloworld.txt","version":2}}}
+S> Content-Length: 158
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/publishDiagnostics","jsonrpc":"2.0","params":{"PublishDiagnosticsParams":{"uri":"","diagnostics":[{"message":"Incorrect sentence"}]}}}
+ > Content-Length: 167
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/didChange","jsonrpc":"2.0","id":3,"params":{"contentChanges":{"text":" print Helloworld"},"textDocument":{"uri":"helloworld.txt","version":3}}}
+S> Content-Length: 158
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/publishDiagnostics","jsonrpc":"2.0","params":{"PublishDiagnosticsParams":{"uri":"","diagnostics":[{"message":"Incorrect sentence"}]}}}
+ > Content-Length: 166
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/didChange","jsonrpc":"2.0","id":4,"params":{"contentChanges":{"text":" print Helloorld"},"textDocument":{"uri":"helloworld.txt","version":4}}}
+S> Content-Length: 158
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/publishDiagnostics","jsonrpc":"2.0","params":{"PublishDiagnosticsParams":{"uri":"","diagnostics":[{"message":"Incorrect sentence"}]}}}
+ > Content-Length: 167
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/didChange","jsonrpc":"2.0","id":5,"params":{"contentChanges":{"text":" print Helloworld"},"textDocument":{"uri":"helloworld.txt","version":5}}}
+S> Content-Length: 158
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"textDocument/publishDiagnostics","jsonrpc":"2.0","params":{"PublishDiagnosticsParams":{"uri":"","diagnostics":[{"message":"Incorrect sentence"}]}}}
+ > Content-Length: 56
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Shutdown","jsonrpc":"2.0","id":6,"params":{}}
+S> Content-Length: 56
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Shutdown","jsonrpc":"2.0","id":6,"result":{}}
+ > Content-Length: 54
+Content-Type: application/vim-jsonrpc; charset=utf-8
+
+{"method":"Exit","jsonrpc":"2.0","id":200,"params":{}}
